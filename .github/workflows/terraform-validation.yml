@@ -53,3 +53,11 @@ jobs:
       - name: Validate virtual-network example
         working-directory: examples/virtual-network
         run: terraform validate
+
+      - name: Initialize storage-account example
+        working-directory: examples/storage-account
+        run: terraform init -backend=false
+
+      - name: Validate storage-account example
+        working-directory: examples/storage-account
+        run: terraform validate

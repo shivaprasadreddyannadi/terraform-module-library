@@ -61,3 +61,11 @@ jobs:
       - name: Validate storage-account example
         working-directory: examples/storage-account
         run: terraform validate
+
+      - name: Initialize key-vault example
+        working-directory: examples/key-vault
+        run: terraform init -backend=false
+
+      - name: Validate key-vault example
+        working-directory: examples/key-vault
+        run: terraform validate

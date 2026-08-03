@@ -37,7 +37,7 @@ docs/
 - [ ] Resource Group Module
 - [x] Virtual Network Module
 - [x] Storage Account Module
-- [ ] Key Vault Module
+- [x] Key Vault Module
 - [ ] Managed Identity Module
 - [ ] Log Analytics Module
 - [ ] Private Endpoint Module

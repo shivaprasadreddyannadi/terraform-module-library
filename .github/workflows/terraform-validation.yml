@@ -69,3 +69,11 @@ jobs:
       - name: Validate key-vault example
         working-directory: examples/key-vault
         run: terraform validate
+
+      - name: Initialize managed-identity example
+        working-directory: examples/managed-identity
+        run: terraform init -backend=false
+
+      - name: Validate managed-identity example
+        working-directory: examples/managed-identity
+        run: terraform validate

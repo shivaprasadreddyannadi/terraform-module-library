@@ -38,7 +38,7 @@ docs/
 - [x] Virtual Network Module
 - [x] Storage Account Module
 - [x] Key Vault Module
-- [ ] Managed Identity Module
+- [x] Managed Identity Module
 - [ ] Log Analytics Module
 - [ ] Private Endpoint Module
 - [ ] Application Gateway Module

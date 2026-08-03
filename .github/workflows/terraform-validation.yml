@@ -44,3 +44,11 @@ jobs:
       - name: Validate resource-group example
         working-directory: examples/resource-group
         run: terraform validate
+        
+      - name: Initialize virtual-network example
+        working-directory: examples/virtual-network
+        run: terraform init -backend=false
+
+      - name: Validate virtual-network example
+        working-directory: examples/virtual-network
+        run: terraform validate

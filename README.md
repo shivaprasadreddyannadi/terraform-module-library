@@ -35,7 +35,7 @@ docs/
 
 - [x] Repository initialization
 - [ ] Resource Group Module
-- [ ] Virtual Network Module
+- [x] Virtual Network Module
 - [ ] Storage Account Module
 - [ ] Key Vault Module
 - [ ] Managed Identity Module

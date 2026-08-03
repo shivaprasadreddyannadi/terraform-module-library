@@ -1,23 +1,46 @@
 name: Terraform Module Validation
 
 on:
-
   push:
+    branches:
+      - main
+    paths:
+      - "modules/**"
+      - "examples/**"
+      - ".github/workflows/terraform-validation.yml"
 
   pull_request:
+    paths:
+      - "modules/**"
+      - "examples/**"
+      - ".github/workflows/terraform-validation.yml"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
-
   validate:
-
+    name: Format and Validate Modules
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
 
-      - uses: actions/checkout@v5
-
-      - uses: hashicorp/setup-terraform@v3
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v4
         with:
-          terraform_version: 1.15.8
+          terraform_version: "1.15.8"
 
-      - run: terraform fmt -check -recursive
+      - name: Check Terraform formatting
+        run: terraform fmt -check -recursive
+
+      - name: Initialize resource-group example
+        working-directory: examples/resource-group
+        run: terraform init -backend=false
+
+      - name: Validate resource-group example
+        working-directory: examples/resource-group
+        run: terraform validate

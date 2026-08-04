@@ -100,3 +100,10 @@ jobs:
       - name: Validate private-endpoint example
         working-directory: examples/private-endpoint
         run: terraform validate
+      - name: Initialize application-gateway example
+        working-directory: examples/application-gateway
+        run: terraform init -backend=false
+
+      - name: Validate application-gateway example
+        working-directory: examples/application-gateway
+        run: terraform validate

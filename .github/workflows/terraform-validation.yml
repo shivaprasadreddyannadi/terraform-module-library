@@ -93,3 +93,10 @@ jobs:
       - name: Validate log-analytics example
         working-directory: examples/log-analytics
         run: terraform validate
+      - name: Initialize private-endpoint example
+        working-directory: examples/private-endpoint
+        run: terraform init -backend=false
+
+      - name: Validate private-endpoint example
+        working-directory: examples/private-endpoint
+        run: terraform validate

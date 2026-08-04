@@ -40,7 +40,7 @@ docs/
 - [x] Key Vault Module
 - [x] Managed Identity Module
 - [x] Log Analytics Module
-- [ ] Private Endpoint Module
+- [x] Private Endpoint Module
 - [ ] Application Gateway Module
 - [ ] AKS Module
 

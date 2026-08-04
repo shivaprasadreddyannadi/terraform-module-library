@@ -41,7 +41,7 @@ docs/
 - [x] Managed Identity Module
 - [x] Log Analytics Module
 - [x] Private Endpoint Module
-- [ ] Application Gateway Module
+- [x] Application Gateway Module
 - [ ] AKS Module
 
 ## Author

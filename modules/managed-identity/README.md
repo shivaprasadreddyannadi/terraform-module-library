@@ -4,10 +4,10 @@ Creates an Azure user-assigned managed identity.
 
 ## Features
 
-- Reusable user-assigned identity
 - No stored credentials
 - Supports Azure RBAC assignments
-- Suitable for AKS workload identity, applications and automation
+- Suitable for AKS workload identity
+- Suitable for applications and automation
 - Standard tagging
 
 ## Inputs

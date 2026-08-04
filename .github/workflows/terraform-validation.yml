@@ -85,3 +85,11 @@ jobs:
       - name: Validate managed-identity example
         working-directory: examples/managed-identity
         run: terraform validate
+
+      - name: Initialize log-analytics example
+        working-directory: examples/log-analytics
+        run: terraform init -backend=false
+
+      - name: Validate log-analytics example
+        working-directory: examples/log-analytics
+        run: terraform validate

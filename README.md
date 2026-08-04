@@ -39,7 +39,7 @@ docs/
 - [x] Storage Account Module
 - [x] Key Vault Module
 - [x] Managed Identity Module
-- [ ] Log Analytics Module
+- [x] Log Analytics Module
 - [ ] Private Endpoint Module
 - [ ] Application Gateway Module
 - [ ] AKS Module

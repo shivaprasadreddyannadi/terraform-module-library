@@ -34,7 +34,7 @@ docs/
 ## Roadmap
 
 - [x] Repository initialization
-- [ ] Resource Group Module
+- [x] Resource Group Module
 - [x] Virtual Network Module
 - [x] Storage Account Module
 - [x] Key Vault Module
@@ -42,7 +42,7 @@ docs/
 - [x] Log Analytics Module
 - [x] Private Endpoint Module
 - [x] Application Gateway Module
-- [ ] AKS Module
+- [x] AKS Module
 
 ## Author
 

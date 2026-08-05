@@ -107,3 +107,10 @@ jobs:
       - name: Validate application-gateway example
         working-directory: examples/application-gateway
         run: terraform validate
+      - name: Initialize aks example
+        working-directory: examples/aks
+        run: terraform init -backend=false
+
+      - name: Validate aks example
+        working-directory: examples/aks
+        run: terraform validate
